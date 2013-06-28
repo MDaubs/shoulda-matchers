@@ -15,3 +15,10 @@ appraise '3.2' do
   gem 'jquery-rails'
   gem 'sass-rails'
 end
+
+if RUBY_VERSION >= '1.9.3'
+  appraise '4.0' do
+    gem 'rails', '~> 4.0.0'
+    gem 'protected_attributes'
+  end
+end

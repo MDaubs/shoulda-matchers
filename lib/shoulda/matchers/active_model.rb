@@ -18,6 +18,7 @@ require 'shoulda/matchers/active_model/validate_numericality_of_matcher'
 require 'shoulda/matchers/active_model/allow_mass_assignment_of_matcher'
 require 'shoulda/matchers/active_model/errors'
 
+require 'active_model/forbidden_attributes_protection' #FIXME: Why does this fix Rails 4?
 
 module Shoulda
   module Matchers
